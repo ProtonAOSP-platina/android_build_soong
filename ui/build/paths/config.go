@@ -114,6 +114,11 @@ var Configuration = map[string]PathConfig{
 	"ld.gold":    Forbidden,
 	"pkg-config": Forbidden,
 
+	// Proton Clang
+	"arm-linux-androideabi-as": Allowed,
+	"arm-linux-androideabi-ld": Allowed,
+	"arm-linux-androideabi-ld.bfd": Allowed,
+
 	// These are toybox tools that only work on Linux.
 	"pgrep": LinuxOnlyPrebuilt,
 	"pkill": LinuxOnlyPrebuilt,
